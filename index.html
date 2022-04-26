@@ -1,5 +1,5 @@
 <head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
@@ -128,11 +128,21 @@
         .absolute {
             position: absolute;
         }
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media (min-width: 600px){
 
+            .bg-blue {
+                background-color: blue;
+            }
+            
+        }
 
 </style>
 </head>
-<header class="bg-gray-900 flex justify-between py-18 z-10 relative" style="padding: 18px 12px;">
+<header class=" bg-blue flex justify-between py-18 z-10 relative mx-auto" style="padding: 18px 12px; max-width: 1200px;">
 
     <div class="flex justify-center items-center">
         <img src="logo.svg" style="margin-right: 50px;" alt="">
@@ -150,23 +160,24 @@
 
 </header>
 
-<section class="relative" style="top: -77px;">
+<section class="relative">
     <video 
         loop="loop" 
         autoplay="autoplay" 
         playsinline 
         muted="muted" 
         class="w-full object-cover absolute" 
-        style="min-height: 550px;"
+        style="height: 689px; top: -77px;"
         src="chris.mp4"></video>
     <!-- <img src="hero.png" class="w-full" alt=""> -->
 
-    <div class="bg-gray-900 relative z-10" style="max-width: 538px;">
+    <div style="padding: 0 12px; padding-top: 100px; max-width: 1200px;" class="mx-auto" >
+    <div class=" relative z-10" style="max-width: 538px;">
         <h1 style="font-size: 60px;" class="text-white">Turbocharge your <span class="text-brand-teal">development career </span> </h1>
         <p class="text-white" style="max-width: 449px; font-size: 20px; margin-top: 30px;">Chris Courses provides students and professionals a college-level web development education.</p>
         <button style="margin-top: 30px; border-radius: 4px;" class="bg-white text-brand-teal-dark border-none py-12 px-28" >Get started</button>
     </div>
-
+    </div>
 </section>
 
 
