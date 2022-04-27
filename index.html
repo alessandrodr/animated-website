@@ -140,7 +140,7 @@
 
 </style>
 </head>
-<header class=" flex justify-between py-18 z-10 relative mx-auto px-6" style="padding: 18px 12px; max-width: 1200px;">
+<header class=" flex justify-between py-18 z-20 relative mx-auto px-6" style="padding: 18px 12px; max-width: 1200px;">
 
     <div class="flex justify-center items-center">
         <img src="logo.svg" style="margin-right: 50px;" alt="">
@@ -164,15 +164,17 @@
 </header>
 
 <section class="relative">
-    <video 
-        loop="loop" 
-        autoplay="autoplay" 
-        playsinline 
-        muted="muted" 
-        class="w-full object-cover absolute md:h-689px h-385px" 
-        style=" top: -80px;"
-        src="chris.mp4"></video>
-    <!-- <img src="hero.png" class="w-full" alt=""> -->
+    <div class=" absolute md:h-689px h-385px" style=" top: -80px;">
+        <div class="bg-black inset-0 absolute z-10 opacity-50 md:hidden"></div>
+        <video 
+            loop="loop" 
+            autoplay="autoplay" 
+            playsinline 
+            muted="muted" 
+            class="w-full h-full object-cover" 
+            src="chris.mp4"></video>
+        <!-- <img src="hero.png" class="w-full" alt=""> -->
+    </div>
 
     <div style="max-width: 1200px;" class="mx-auto md:pt-32 px-6" >
     <div class=" relative z-10" style="max-width: 538px;">
